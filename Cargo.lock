@@ -696,6 +696,7 @@ dependencies = [
  "aws-sdk-route53",
  "aws-types",
  "fluent_builder",
+ "log",
  "tokio",
 ]
 
