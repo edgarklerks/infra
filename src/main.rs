@@ -18,6 +18,7 @@ async fn create_config() -> SdkConfig {
 
 #[tokio::main]
 async fn main() -> Result<(),InfraError> {
+    pretty_env_logger::init();
     let config = create_config().await;
     let vpc_client = unwrap_with_infra_error(VpcClient::init(&config).await);
     let vpcProd = vpc_client.create(&VpcResource{

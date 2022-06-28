@@ -16,4 +16,5 @@ fluent_builder = "0.6.0"
 aws-sdk-account = "0.14.0"
 async-trait = "0.1.56"
 log = "0.4.17"
+pretty_env_logger = "0.4.0"
 tokio = { version = "1", features = ["full"] }
